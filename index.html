@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRESSPOINT Style News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="presspoint.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div>
+          <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">=</button>
+          <span class="date">Jun 7, 2026</span>
+        </div>
+        <a class="brand nav-home" href="#home">PRESSPOINT</a>
+        <div class="top-actions">
+          <a class="today-link" href="#today" data-nav="today">Today's Paper</a>
+          <form class="search-form" id="searchForm" role="search">
+            <input id="searchInput" type="search" placeholder="Search news" aria-label="Search news">
+            <button class="search-btn" id="searchBtn" type="submit" aria-label="Search">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-inner" id="mainNav"></div>
+    </nav>
+
+  </header>
+
+  <aside class="drawer" id="drawer" aria-label="Side menu">
+    <div class="drawer-head">
+      <span class="drawer-brand">PRESSPOINT</span>
+      <button class="close-btn" id="closeDrawer" type="button" aria-label="Close menu">x</button>
+    </div>
+    <div class="drawer-grid" id="drawerNav"></div>
+    <div class="drawer-grid" id="drawerSubNav"></div>
+  </aside>
+
+  <main>
+    <section class="home-shell">
+      <div class="page">
+        <div class="home-grid" id="homeGrid"></div>
+        <div class="empty-state" id="emptyState">No stories found in this section.</div>
+      </div>
+    </section>
+
+    <section class="article-shell" id="articleShell" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>PRESSPOINT Channels</h3>
+        <a href="#news" data-nav="news">News</a>
+        <a href="#sports" data-nav="sports">Sports</a>
+        <a href="#entertainment" data-nav="entertainment">Entertainment</a>
+        <a href="#lifestyle" data-nav="lifestyle">Lifestyle</a>
+        <a href="#socialmedia" data-nav="socialmedia">Social Media</a>
+        <a href="#environment" data-nav="environment">Environment</a>
+        <a href="#science" data-nav="science">Science</a>
+        <a href="#technology" data-nav="technology">Technology</a>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <a class="service-link" href="#services/mobile" data-service="mobile">Mobile</a>
+        <a class="service-link" href="#services/rss" data-service="rss">RSS</a>
+        <a class="service-link" href="#services/archive" data-service="archive">Archive</a>
+        <a class="service-link" href="#services/contact" data-service="contact">Contact Us</a>
+        <a class="service-link" href="#services/newsletter" data-service="newsletter">Newsletter</a>
+      </div>
+      <div class="footer-col">
+        <h3>PRESSPOINT Company</h3>
+        <a class="company-link" href="#company/about" data-page="about">About PRESSPOINT</a>
+        <a class="company-link" href="#company/user-agreement" data-page="userAgreement">User Agreement</a>
+        <a class="company-link" href="#company/link-policy" data-page="linkPolicy">Link Policy</a>
+        <a class="company-link" href="#company/privacy" data-page="privacy">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <h3>Partners</h3>
+        <a href="#scout" data-nav="scout">Scout</a>
+        <a href="#nolisoli" data-nav="nolisoli">Nolisoli</a>
+        <a href="#preen" data-nav="preen">Preen</a>
+        <a href="#multisports" data-nav="multisports">Multisports</a>
+        <a href="#fnbreport" data-nav="fnbreport">F&amp;B Report</a>
+        <a href="#cebudailynews" data-nav="cebudailynews">Cebu Daily News</a>
+        <a href="#dziq990am" data-nav="dziq990am">DZIQ990 AM</a>
+        <a href="#mobility" data-nav="mobility">Mobility</a>
+      </div>
+    </div>
+    <div class="copyright">Copyright 2026 PRESSPOINT. All rights reserved.</div>
+  </footer>
+  <script src="presspoint.js"></script>
+</body>
+</html>
